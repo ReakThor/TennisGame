@@ -73,7 +73,7 @@ public class GameTest {
     }
 
     @Test
-    public void advantageShouldBeDescriptionWhenLeastThreePointsHaveNeenScoredByEachSideAndPlayerHasOnePointMoreThanHisOpponent() {
+    public void advantageShouldBeDescriptionWhenLeastThreePointsHaveBeenScoredByEachSideAndPlayerHasOnePointMoreThanHisOpponent() {
         IntStream.rangeClosed(1, 3).forEach((Integer) -> {
             victor.winBall();
         });
