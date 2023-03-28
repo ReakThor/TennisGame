@@ -1,8 +1,8 @@
 package org.example;
 
 public class Game {
-    private Player firstPlayer;
-    private Player secondPlayer;
+    private final Player firstPlayer;
+    private final Player secondPlayer;
 
     public Game(Player firstPlayer, Player secondPlayer)
     {
@@ -13,38 +13,40 @@ public class Game {
     public String getScores()
     {
         if(gameOver())
-            return whoHasAdvantage(firstPlayer, secondPlayer).getName() + " won";
-        else if(whoHasAdvantage(firstPlayer, secondPlayer) != null)
-            return "advantage " + whoHasAdvantage(firstPlayer, secondPlayer).getName();
-        else if(isDeuce())
-            return "deuce";
+            return whoHasAdvantage().getName() + " won";
+        if(scoredAtLeast3Points(firstPlayer) && scoredAtLeast3Points(secondPlayer))
+        {
+            if(isDeuce())
+            {
+                return "deuce";
+            }
+            return "advantage " + whoHasAdvantage().getName();
+        }
+
         return firstPlayer.printScore() + " - " + secondPlayer.printScore();
     }
 
-    private Player whoHasAdvantage (Player firstPlayer, Player secondPlayer)
+    private Player whoHasAdvantage ()
     {
-        if (firstPlayer.getScore() > secondPlayer.getScore() && scoredAtLeast3Points(firstPlayer))
+        if (firstPlayer.getScore() > secondPlayer.getScore())
             return firstPlayer;
-        else if (firstPlayer.getScore() < secondPlayer.getScore() && scoredAtLeast3Points(secondPlayer))
-            return secondPlayer;
 
-        return null;
-
+        return secondPlayer;
     }
 
     private boolean gameOver()
     {
-        return scoreDifference() >= 2 && (scoredAtLeast3Points(firstPlayer) || scoredAtLeast3Points(secondPlayer));
+        return (scoreDifference() >= 2 && (firstPlayer.getScore() > 3 || secondPlayer.getScore() > 3));
     }
 
     private boolean isDeuce()
     {
-        return firstPlayer.getScore() == secondPlayer.getScore() && firstPlayer.getScore()>=3;
+        return firstPlayer.getScore() == secondPlayer.getScore();
     }
 
     private boolean scoredAtLeast3Points(Player player)
     {
-        return player.getScore() > 3;
+        return player.getScore() >= 3;
     }
 
     private int scoreDifference()
