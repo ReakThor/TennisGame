@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45219dad-100d-4683-8f97-5781813273a2" name="Changes" comment="">
+    <list default="true" id="45219dad-100d-4683-8f97-5781813273a2" name="Changes" comment="rebase better to solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="solution" />
+        <entry key="$PROJECT_DIR$" value="better" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -154,14 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679950236888</updated>
     </task>
-    <task id="LOCAL-00002" summary="ugly but works">
-      <created>1679957060754</created>
+    <task id="LOCAL-00002" summary="rebase better to solution">
+      <created>1679991180938</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1679957060754</updated>
+      <updated>1679991180938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +180,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="GameTest added correct Maven tests" />
     <MESSAGE value="ugly but works" />
-    <option name="LAST_COMMIT_MESSAGE" value="ugly but works" />
+    <MESSAGE value="code cleanup" />
+    <MESSAGE value="rebase better to solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebase better to solution" />
   </component>
 </project>
