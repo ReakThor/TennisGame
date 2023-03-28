@@ -126,10 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.fortyShouldBeDescriptionForScore3" />
+        <item itemvalue="JUnit.GameTest.deuceShouldBeDescriptionWhenAtLeastThreePointsHaveBeenScoredByEachPlayerAndTheScoresAreEqual" />
+        <item itemvalue="JUnit.GameTest.advantageShouldBeDescriptionWhenLeastThreePointsHaveBeenScoredByEachSideAndPlayerHasOnePointMoreThanHisOpponent" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.GameTest.fortyShouldBeDescriptionForScore3" />
-        <item itemvalue="JUnit.GameTest.advantageShouldBeDescriptionWhenLeastThreePointsHaveBeenScoredByEachSideAndPlayerHasOnePointMoreThanHisOpponent" />
-        <item itemvalue="JUnit.GameTest.deuceShouldBeDescriptionWhenAtLeastThreePointsHaveBeenScoredByEachPlayerAndTheScoresAreEqual" />
       </list>
     </recent_temporary>
   </component>
